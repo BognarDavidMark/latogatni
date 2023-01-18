@@ -1,5 +1,5 @@
  /*
-* File: app.component.ts
+* File: adat.component.ts
 * Author: Bognár Dávid Márk
 * Copyright: 2023, Bognár Dávid Márk
 * Group: Szoft II/N
@@ -11,10 +11,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-adat',
+  templateUrl: './adat.component.html',
+  styleUrls: ['./adat.component.css']
 })
-export class AppComponent {
-  title = 'latogatni';
+export class AdatComponent {
+[x: string]: any;
+
 }

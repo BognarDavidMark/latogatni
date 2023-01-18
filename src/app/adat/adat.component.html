@@ -1,0 +1,32 @@
+<!-- /*
+* File: adat.component.html
+* Author: Bognár Dávid Márk
+* Copyright: 2023, Bognár Dávid Márk
+* Group: Szoft II/N
+* Date: 2023-01-18
+* Github: https://github.com/BognarDavidMark/
+* Licenc: GNU GPL
+*/ -->
+
+<h2 class="text-center mt-3">Városok</h2>
+<div class="container table-center">
+    <table class="table table-striped">
+        <thead class=" bg-primary text-danger">
+            <tr>
+                <th>Név</th>
+                <th>Megye</th>
+                <th>Terület (km2)</th>
+                <th>Népesség (fő)</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let places of place">
+                <td>{{places.name}}</td>
+                <td>{{places.county}}</td>
+                <td>{{places.area}}</td>
+                <td>{{places.population}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
